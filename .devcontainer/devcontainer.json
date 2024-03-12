@@ -24,6 +24,5 @@
       }
     }
   },
-  "onCreateCommand": ".devcontainer/onCreate.sh",
-  "postCreateCommand": ".devcontainer/postCreate.sh"
+  "onCreateCommand": "gem install solargraph"
 }
