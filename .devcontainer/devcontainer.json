@@ -1,0 +1,29 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "3.3" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "iliazeus.vscode-ansi",
+        "ms-azuretools.vscode-docker",
+        "manuelpuyol.erb-linter",
+        "waderyan.gitblame",
+        "GitHub.github-vscode-theme",
+        "eamodio.gitlens",
+        "IBM.output-colorizer",
+        "castwide.solargraph",
+        "rebornix.Ruby",
+        "wingrunr21.vscode-ruby",
+        "bung87.vscode-gemfile",
+        "vscode-icons-team.vscode-icons"
+      ],
+      "settings": {
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  },
+  "onCreateCommand": ".devcontainer/onCreate.sh",
+  "postCreateCommand": ".devcontainer/postCreate.sh"
+}
